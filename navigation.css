@@ -1,0 +1,197 @@
+/* DROP*/
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* BURGER MENU */
+
+/* Telling the navigation list */
+/* to hide (max-height=0) */
+/* and center text when it shows up */
+
+.menu {
+    clear: both;
+    text-align: center;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+/* Make beef in burger */
+.navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+
+.navicon:before,
+.navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.navicon:before {
+    top: 5px;
+}
+
+.navicon-after {
+    top: 5px;
+}
+
+/* End of bread making */
+/* ----Menu Button ---- */
+
+.menu-btn {
+    display: none;
+}
+
+.menu-btn:checked ~ .menu {
+    max-height: 240px;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+/* End button animation */
+
+.input_searchfield {
+    float: left;
+    padding: 6px;
+    margin-top: 8px;
+    margin-left: 8px;
+    font-size: 12px;
+    border-left: #bdffb2 solid 1px;
+    border-top: #bdffb2 solid 1px;
+    border-bottom:  #bdffb2 solid 1px;
+}
+
+.searchbutton {
+    float: left;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 5px;
+    background: #ddd;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.form_container {
+    float: right;
+    margin-top: 7px;
+}
+
+.breadcrumb {
+    float: right;
+    margin-right: 5px;
+    font-size: 12px;
+    color: #91855c;
+}
+
+.breadcrumb_link {
+    text-decoration: none;
+    color: #91855c;
+}
+
+.breadcrumb_link:hover {
+    text-decoration: underline;
+    opacity: 0.7;
+}
+
+@media only screen and (min-width: 1037px) {
+    .selected_contentsection {
+        background-color: #bdffb2;
+    }
+
+    .input_number {
+        width: 45px;
+        text-align: right;
+    }
+
+    /* Menu on wide screen */
+
+    .menu_item {
+        float: left
+    }
+
+    .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+}
+
+

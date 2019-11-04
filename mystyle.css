@@ -1,0 +1,396 @@
+
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box; /* Border and padding becomes a part of the content area */
+    
+    
+    
+font-family: Verdana, Geneva, sans-serif;
+
+}
+
+.navigation_container {
+    display: flex; /* makes content flexible in relation to different devices and their screen sizes */
+    align-items: center;
+    justify-content: space-between; /*children of navigation container are divided and placed horizontally at the start and end of the container */
+    background-color: black;
+    height: 40px;
+    
+}
+
+.navigation_item {
+    margin: 0 16px 0 24px;
+
+}
+
+
+
+.link {
+    text-decoration: none;/* turns off the underline */
+    color: ghostwhite;
+    background-color: black;
+}
+
+/* VIDEO STARTS */
+
+.video {
+    max-width: 100%; /* video player will scale down if it has to (never scale up to be larger than its original size) */
+    background-color: black;
+}
+
+.banner_container {
+    overflow: hidden; /* if the video is drifting outside the parent container, it must be hidden to the user of the web-page */
+    max-height: 640px;
+    position: relative;
+    background-color: black;
+
+
+}
+
+
+.header_container {
+    position: absolute;
+    top: 50%; /* position itself 50% vertically */
+    left: 50%; /* position itself 50% horisontally */
+    /* now text is in the right bottom corner and I need it to be in the middle so I am using transform */
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    width: 100%;
+    
+
+
+}
+
+.header_text {
+    color: ghostwhite;
+    font-size: 3vw; /* When the width of the viewport changes, so does the font-size */
+    
+    
+}
+
+.header_text_what {
+    color: ghostwhite;
+    
+        
+}
+
+/* VIDEO ENDS*/
+
+.intro_text {
+    color: ghostwhite;
+    font-size: 17px;
+ background-color: black;
+
+    
+}
+
+.what_is_text {
+    color: ghostwhite;
+    font-size: 17px;
+        background-color: black;
+    text-align: left;
+}
+
+.what_text {
+    color: ghostwhite;
+    font-size: 2vw;
+    
+}
+
+.intro_container {
+    text-align: inherit; 
+    
+    background-color: black;
+
+}
+
+.details_container {
+    display: flex; /* being flexible and independent of device screen size */
+    justify-content: space-around; /* spaces between children (content-containers) and the surrounding browser window */
+    flex-wrap: wrap;
+background-color: black;
+    
+}
+
+
+
+.content_container {
+    padding: 16px 25px 16px 25px;
+    margin: 16px 16px 16px 16px;
+    background-color: black;
+    width: 320px; /* make them wrap when devices with small screens read the page, avoiding the content to squeeze */
+    text-align: left;
+display: flex;
+    justify-content: center;
+}
+
+.content_container_learn {
+    padding: 16px 25px 16px 25px;
+
+    background-color: black;
+    width: 320px; /* make them wrap when devices with small screens read the page, avoiding the content to squeeze */
+    text-align: left;
+  justify-content: center;
+    display: flex;
+    
+}
+
+
+.menu_text {
+    color: ghostwhite;
+    font-size: 20px;
+    margin-top: 8px;
+
+}
+
+.menu_image_learn {
+    margin-top: 15px;
+        max-width: 100%;
+}
+
+    .menu_image {
+    margin-top: 15px;
+        max-width: 400px;
+
+}
+
+
+.newsletter {
+    position: relative;
+    height: 250px;
+    background-image: url(images/446870.jpg);
+    background-size: cover;
+    /* I would also add width, but it is not necessary as <section> is a block-level code and occupies horizontally 100% of its parent container */
+
+}
+
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); /* Same as the text position on top of the video */
+    text-align: center;
+    background: black;
+    background-color: rgba (0, 0, 0, 0.7);
+    padding: 32px 32px 32px 32px;
+    width: 70%;
+}
+
+.form_headline {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 11px;
+
+}
+
+.form_label {
+    font-size: 14px;
+    color: white;
+}
+
+.form_element {
+    padding: 5px 10px 5px 10px;
+    margin: 0 0 5px 0;
+    color: darkslategray;
+    background-color: white;
+}
+
+.contact_container {
+    background-color: black;
+    color: white;
+    display: flex; /* wraps the content on small devices */
+    flex-wrap: wrap;
+    justify-content: space-around; /* placing the children with space between them and to the borders of the browser */
+    align-items: center;
+    height: 325px;
+}
+
+.contactus_container {
+    width: 320px;
+    font-size: 16px;
+
+}
+
+.contactus_text {
+    color: lightgray;
+}
+
+.some_container {
+    width: 170px;
+    font-size: 16px;
+}
+
+.some_list {
+    margin-top: 5px;
+    list-style-type: none;
+}
+
+.some_icon {
+    color: white;
+}
+
+.somelist_element {
+    margin: 0 0 10px 0;
+}
+
+
+html {
+    scroll-behavior: smooth; /* the browser scroll smooth */
+}
+
+.link:hover {
+    color: lightgray; /* change the color of the link when the mouse pointer hovers on it */
+}
+
+
+
+/* Artickles */
+
+.content_container_love {
+    padding: 16px 25px 16px 25px;
+    margin: 25px 25px 25px 25px;
+    background-color: black;
+    width: 320px; /* make them wrap when devices with small screens read the page, avoiding the content to squeeze */
+    text-align: left;
+    margin-right: 270px;
+    display: flex;
+    flex-wrap: wrap;
+    
+        
+}
+
+.menu_image_love {
+    margin-top: 15px;
+        max-width: 500px;
+
+}
+
+
+.header_container_love {
+    position: inherit;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+    text-align: center;
+    margin: 16px 30px 16px 30px;
+    
+}
+
+.author_name {
+    color: ghostwhite;
+    
+    justify-content: center;
+    display: flex;
+font-size: 1vw;
+    
+}
+
+
+
+.quote_image {
+    position: inherit;
+ max-width: 100%;
+     justify-content: center;
+    display: flex;
+}
+
+
+.quote_text {
+    color: ghostwhite;
+    font-size: 15px;
+text-align: right;
+    position: absolute;
+    display: flex;
+    margin-left: 110px;
+    
+}
+
+.affirmations {
+color: ghostwhite;
+    font-size: 17px;
+ background-color: black;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 16px;
+}
+
+.content_container_quote {
+     padding: 16px 25px 16px 25px;
+    margin: 25px 25px 25px 150px;
+    background-color: black;
+    width: 320px; /* make them wrap when devices with small screens read the page, avoiding the content to squeeze */
+    margin-right: 200px;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+    
+}
+
+    /* ONLINE SHOP STARTS HERE */
+
+.icon_text {
+    display: flex;
+    margin: 16px 0 16px 0;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1,5;
+    color: ghostwhite;
+    
+}
+
+.subdetails_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
+}
+
+.content_container_products {
+    padding: 16px 24px 16px 24px;
+    margin: 0 16px 16px 16px;
+    
+    width: 300px;
+    text-align: center;
+    line-height: 1.5;
+    background-color: black;
+}
+
+.addtobasket_button {
+    margin-top: 10px;
+    padding: 7px;
+    color: #ffffff;
+    background-color: black;
+    cursor: pointer;
+}
+
+
+
+.product_image {
+    width: 275px;
+}
+
+.button_image {
+    width: 100px;
+    
+}
+    
+
+
+
+
+
+
+
+
+    
+    
